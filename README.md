@@ -64,6 +64,10 @@ This doctrine establishes that **if no actor holds explicit, enforceable stop po
 
 ## What This Doctrine Is Not
 
+- A certification
+- An endorsement of any product, system, or organization
+- An implementation, monitoring, or operational tool
+- A guarantee of outcomes
 - Not an ethics framework
 - Not a safety checklist
 - Not alignment guidance
@@ -97,15 +101,7 @@ See `/LICENSE`.
 - A basis for independent conformance and readiness assessment
 - A reference for detecting longitudinal governance failure modes
 
----
-
-## What This Standard Is Not
-
-- A certification
-- An endorsement of any product, system, or organization
-- An implementation, monitoring, or operational tool
-- A guarantee of outcomes
-
+---   
 ---
 
 ## Files in This Repository
