@@ -9,3 +9,4 @@ SHA-256:
 
 Purpose:
 - Canonical execution-time governance workflow diagram for HHI_GOV_01.
+- diagrams/Execution-Time_Governance_Workflow.pdf (canonical execution-time governance reference diagram)
