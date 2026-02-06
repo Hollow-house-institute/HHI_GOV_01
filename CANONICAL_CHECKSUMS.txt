@@ -5,3 +5,4 @@ eaf37d0c30180cf4dedf6d08bcfc7fbf50035e3dd735fbf7c570426ef15edcbb  LICENSE.md
 d1bf5e765bb08430ffd862dcef400883f26d9dd38b53cb9d3e902d65f084f3c7  README.md
 f565f2f1aa3b65f51c42098f43d707ab927b524aab08f9f2425cc343b2ed38d3  STANDARDS/relationship-to-HHI-GOV-01.md
 21a469fde363b3d1100bee9a27d9b1c00f915193e2c4c403880c9104d75b6d6f  LICENSE/Governance_License_Crosswalk.md
+<sha256-hash>  diagrams/Execution-Time_Governance_Workflow.pdf
