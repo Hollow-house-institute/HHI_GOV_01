@@ -1,16 +1,42 @@
-name: Governance Check
-on:
-  workflow_dispatch:
-on: [push, pull_request]
+---
+name: governance-check
+
+"on":
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.md"
+      - "**/*.lock"
+      - "**/*.yml"
+      - "**/*.yaml"
+      - "governance/**"
+      - "standards/**"
+      - ".github/**"
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch: {}
 
 jobs:
-  governance:
+  governance-check:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Verify governance reference
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Enforce strict shell
         run: |
-          if ! grep -R "HHI-GOV-01" README.md; then
-            echo "Missing HHI-GOV-01 governance reference"
+          set -euo pipefail
+
+      - name: Run governance check
+        run: |
+          echo "Running governance checks..."
+          # TODO: confirm canonical script path
+          if [ -f scripts/governance-check.sh ]; then
+            bash scripts/governance-check.sh
+          else
+            echo "ERROR: scripts/governance-check.sh not found"
             exit 1
           fi
