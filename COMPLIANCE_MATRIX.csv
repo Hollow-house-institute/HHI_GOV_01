@@ -1,0 +1,11 @@
+domain,artifact,clause_id,requirement_type,requirement_text,evidence_required,status,notes
+Governance,HHI_GOV_01,2.1,Behavioral,Authority MUST be explicitly declared at execution time,Authority registry or runtime logs,TODO,
+Governance,HHI_GOV_01,2.2,Behavioral,Accountability MUST be bound to named roles,Role binding records,TODO,
+Governance,HHI_GOV_01,2.3,Behavioral,Governance events MUST be non-bypassable,Event emission logs,TODO,
+Governance,HHI_GOV_01,2.4,Behavioral,Governance evidence MUST satisfy ledger invariants,Ledger artifacts,TODO,
+Governance,HHI_GOV_01,2.5,Behavioral,Behavioral drift MUST be detectable over time,Drift metrics,TODO,
+Governance,HHI_GOV_01,2.6,Behavioral,Escalation paths MUST be enforced,Escalation records,TODO,
+Governance,HHI_GOV_01,2.7,Behavioral,Governance failure MUST trigger defined response,Incident response logs,TODO,
+Governance,HHI_GOV_01,2.8,Behavioral,Separation of powers MUST be maintained,Role separation proof,TODO,
+Governance,HHI_GOV_01,3,Behavioral,Absence of evidence MUST itself be detectable,Negative evidence artifacts,TODO,
+Governance,HHI_GOV_01,4,Behavioral,Governance claims MUST be provable and falsifiable,Audit artifacts,TODO,
