@@ -1,6 +1,20 @@
-clause_id,clause_title,requirement_summary,evidence_type,evidence_path_or_pattern,validation_method,owner_role,status,notes
-TODO-01,TODO,"TODO requirement summary",LOCK_MANIFEST,governance/approval/LOCK_MANIFEST.json,"hash match + presence",HHI_Human_Authority,TODO,""
-TODO-02,TODO,"TODO requirement summary",CHECKSUMS,governance/approval/CANONICAL_CHECKSUMS_*.txt,"sha256 verify",Builder,TODO,""
-TODO-03,TODO,"TODO requirement summary",CODEOWNERS,.github/CODEOWNERS,"branch protection check",Builder,TODO,""
-TODO-04,TODO,"TODO requirement summary",WORKFLOW,.github/workflows/governance-check.yml,"CI pass/fail",Automation,TODO,""
-TODO-05,TODO,"TODO requirement summary",EVIDENCE_LOG,governance/audit/*,"presence + format",Auditor,TODO,""
+clause_id,section_title,requirement_summary,evidence_type,evidence_description,evidence_path_or_pattern,validation_method,owner_role,status,notes
+HHI-GOV-01-1,Scope & Applicability,Requirements apply only within defined boundaries,SCOPE_DECLARATION,Scope definition,HHI-GOV-01.md#scope,document inspection,Builder,TODO,
+HHI-GOV-01-1.3,Governance Boundary,Boundary MUST be explicitly defined,BOUNDARY_DOC,Boundary artifact,docs/boundaries/*,document inspection,Builder,TODO,
+
+HHI-GOV-01-2.1,Authority Declaration,Authority MUST be declared at execution time,AUTHORITY_RECORD,Authority declaration,governance/approval/LOCK_MANIFEST.json,artifact presence,Human Authority,LOCKED,
+HHI-GOV-01-2.2,Accountability Binding,Decisions MUST bind to accountable roles,ACCOUNTABILITY_TRACE,Decision-role trace,governance/audit/*,traceability check,Auditor,TODO,
+
+HHI-GOV-01-2.3,Non-Bypassable Event Emission,Actions MUST emit events,EVENT_LOG,Execution event logs,governance/audit/events/*,log completeness,Automation,TODO,
+HHI-GOV-01-2.4,Evidence & Ledger Invariants,Evidence MUST satisfy invariants,LEDGER_HASH,Checksums + manifests,governance/approval/CANONICAL_CHECKSUMS_*.txt,hash verification,Auditor,LOCKED,
+
+HHI-GOV-01-2.5,Drift Detection,Behavioral drift MUST be detected,DRIFT_METRICS,Drift metrics output,governance/metrics/*,metric presence,Auditor,TODO,
+HHI-GOV-01-2.6,Escalation Enforcement,Escalation MUST be enforced,ESCALATION_RECORD,Escalation execution,governance/audit/escalations/*,workflow check,Human Authority,TODO,
+HHI-GOV-01-2.7,Governance Failure Response,Failure response MUST exist,FAILURE_PLAN,Response definition,docs/failure_response.md,document inspection,Human Authority,TODO,
+
+HHI-GOV-01-2.8,Separation of Powers,Roles MUST be separated,ROLE_DEFINITION,Role separation evidence,docs/roles.md,role overlap analysis,Auditor,TODO,
+
+HHI-GOV-01-3,Negative Evidence Requirement,Absence of evidence MUST be detectable,NEGATIVE_EVIDENCE_LOG,Missing-evidence records,governance/audit/negative/*,absence validation,Auditor,TODO,
+HHI-GOV-01-4,Proof & Falsifiability Criteria,Claims MUST be falsifiable,AUDIT_PROOF_SET,Audit proof artifacts,governance/audit/*,falsifiability review,Auditor,TODO,
+
+HHI-GOV-01-CC,Canonical Closure,Canonical statement governs interpretation,CANONICAL_STATEMENT,Closure clause,HHI-GOV-01.md#canonical-closure,document inspection,Auditor,LOCKED,
