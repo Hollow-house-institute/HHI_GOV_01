@@ -141,3 +141,15 @@ are enforced at runtime under **HHI_GOV_01**.
 
 Diagram:
 - `diagrams/Execution-Time_Governance_Workflow.pdf`
+
+---
+
+## Reference Implementations (Non-Authoritative)
+
+Examples of downstream application and audit evidence may exist in
+external repositories. Such materials are **non-authoritative** and do
+not modify, extend, reinterpret, or supersede this standard.
+
+One example (audit evidence):
+https://github.com/hhidatasettechs-oss/HHIaudits/tree/main/reference_snapshots/governance_first_interaction_case
+
