@@ -101,7 +101,7 @@ See `/LICENSE`.
 - A basis for independent conformance and readiness assessment
 - A reference for detecting longitudinal governance failure modes
 
----   
+---
 ---
 
 ## Files in This Repository
@@ -153,3 +153,15 @@ not modify, extend, reinterpret, or supersede this standard.
 One example (audit evidence):
 https://github.com/hhidatasettechs-oss/HHIaudits/tree/main/reference_snapshots/governance_first_interaction_case
 
+### Downstream Evidence Reference (Non-Authoritative)
+
+The HHIaudits repository contains raw interaction evidence
+related to unstable mirror dynamics observed in AI systems.
+
+Referenced evidence set:
+- Repository: hhidatasettechs-oss/HHIaudits
+- Chat Artifact Set: Unstable Mirrors (2026-02-12)
+
+Authority Note:
+This reference is informational only.
+HHI_GOV_01 remains the sole governance and enforcement standard.
