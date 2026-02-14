@@ -1,6 +1,9 @@
 ---
 name: governance-check
 
+permissions:
+  contents: read
+
 "on":
   push:
     branches:
