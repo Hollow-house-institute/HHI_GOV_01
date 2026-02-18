@@ -165,3 +165,9 @@ Referenced evidence set:
 Authority Note:
 This reference is informational only.
 HHI_GOV_01 remains the sole governance and enforcement standard.
+
+## Governance
+
+This repository inherits governance authority from the **HHI Governance Export — Core**.
+
+All execution, datasets, research, and audits are bound to its standards and constraints.
