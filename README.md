@@ -171,3 +171,11 @@ HHI_GOV_01 remains the sole governance and enforcement standard.
 This repository inherits governance authority from the **HHI Governance Export — Core**.
 
 All execution, datasets, research, and audits are bound to its standards and constraints.
+
+## Governance Audit Tooling
+
+The Hollow House Institute governance ecosystem includes a standards-grade audit prompt used to evaluate terminology compliance and structural governance alignment.
+
+Master Prompt Specification  
+https://github.com/hhidatasettechs-oss/Hollow_House_Standards_Library/blob/main/STANDARDS/MASTER_PROMPT_SPECIFICATION.md
+
