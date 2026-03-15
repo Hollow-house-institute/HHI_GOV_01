@@ -1,0 +1,21 @@
+{
+  "HHI-GOV-01-1": "Scope & Applicability",
+  "HHI-GOV-01-1.1": "In Scope",
+  "HHI-GOV-01-1.2": "Out of Scope",
+  "HHI-GOV-01-1.3": "Governance Boundary",
+
+  "HHI-GOV-01-2": "Core Governance Requirements (Normative)",
+  "HHI-GOV-01-2.1": "Authority Declaration",
+  "HHI-GOV-01-2.2": "Accountability Binding",
+  "HHI-GOV-01-2.3": "Non-Bypassable Event Emission",
+  "HHI-GOV-01-2.4": "Evidence & Ledger Invariants",
+  "HHI-GOV-01-2.5": "Drift Detection",
+  "HHI-GOV-01-2.6": "Escalation Enforcement",
+  "HHI-GOV-01-2.7": "Governance Failure Response",
+  "HHI-GOV-01-2.8": "Separation of Powers",
+
+  "HHI-GOV-01-3": "Negative Evidence Requirement",
+  "HHI-GOV-01-4": "Proof & Falsifiability Criteria",
+
+  "HHI-GOV-01-CC": "Canonical Closure"
+}

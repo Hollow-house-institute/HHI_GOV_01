@@ -1,0 +1,25 @@
+{
+  "run_id": "TODO_RUN_ID",
+  "standard": "HHI_GOV_01",
+  "version": "TODO_STANDARD_VERSION",
+  "scope": "execution-time governance",
+  "inputs": {
+    "evidence_index": "TODO_PATH",
+    "log_sources": ["TODO_PATH_1", "TODO_PATH_2"]
+  },
+  "metrics": [
+    {
+      "id": "M-01",
+      "name": "Decision Boundary Breach Rate",
+      "numerator": "TODO_INT",
+      "denominator": "TODO_INT",
+      "value": "TODO_FLOAT",
+      "evidence_refs": ["TODO_EVIDENCE_REF"]
+    }
+  ],
+  "checksums": {
+    "inputs_sha256": ["TODO_SHA256"],
+    "outputs_sha256": ["TODO_SHA256"]
+  },
+  "generated_at": "TODO_ISO_8601"
+}

@@ -1,0 +1,11 @@
+hhi_clause_id,hhi_clause_title,nist_framework,control_family,control_id,relationship,notes
+HHI-GOV-01-2.1,Authority Declaration,NIST SP 800-53,IA,IA-2,aligned,"Authority identification"
+HHI-GOV-01-2.2,Accountability Binding,NIST SP 800-53,PL,PL-2,aligned,"Role responsibility"
+HHI-GOV-01-2.3,Non-Bypassable Event Emission,NIST SP 800-53,AU,AU-2,aligned,"Audit event generation"
+HHI-GOV-01-2.4,Evidence & Ledger Invariants,NIST SP 800-53,SI,SI-7,aligned,"Integrity protection"
+HHI-GOV-01-2.5,Drift Detection,NIST AI RMF,MEASURE,ME-3,analogous,"Ongoing monitoring"
+HHI-GOV-01-2.6,Escalation Enforcement,NIST SP 800-53,IR,IR-4,aligned,"Incident handling"
+HHI-GOV-01-2.7,Governance Failure Response,NIST SP 800-53,IR,IR-8,aligned,"Post-incident response"
+HHI-GOV-01-2.8,Separation of Powers,NIST SP 800-53,AC,AC-5,aligned,"Separation of duties"
+HHI-GOV-01-3,Negative Evidence Requirement,NIST SP 800-53,AU,AU-6,analogous,"Audit review + anomaly detection"
+HHI-GOV-01-4,Proof & Falsifiability Criteria,NIST SP 800-53,CA,CA-7,aligned,"Continuous assessment"

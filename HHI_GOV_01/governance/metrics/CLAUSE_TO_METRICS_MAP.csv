@@ -1,0 +1,8 @@
+clause_id,metric_id,metric_name,metric_purpose,evidence_source
+HHI-GOV-01-2.3,M-01,Decision Boundary Breach Rate,Detect bypassed execution,governance/audit/events/*
+HHI-GOV-01-2.4,M-06,Audit Evidence Completeness Score,Verify ledger invariants,governance/approval/*
+HHI-GOV-01-2.5,M-02,Stop Authority Invocation Latency,Measure intervention delay,governance/audit/*
+HHI-GOV-01-2.5,M-05,Confidence Reinforcement Exposure,Detect reliance amplification,transcripts/*
+HHI-GOV-01-2.6,M-03,Escalation Completion Rate,Verify escalation enforcement,governance/audit/escalations/*
+HHI-GOV-01-2.8,M-04,Override Utilization Ratio,Detect authority erosion,governance/audit/*
+HHI-GOV-01-3,M-06,Audit Evidence Completeness Score,Detect missing evidence,governance/audit/*

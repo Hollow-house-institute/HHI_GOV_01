@@ -1,0 +1,11 @@
+hhi_clause_id,hhi_clause_title,iso_standard,iso_control_family,iso_control_id,relationship,notes
+HHI-GOV-01-2.1,Authority Declaration,ISO/IEC 27001,Information Security Organization,A.5.2,aligned,"Authority definition aligns to role assignment"
+HHI-GOV-01-2.2,Accountability Binding,ISO/IEC 27001,Information Security Organization,A.5.3,aligned,"Accountability traceability"
+HHI-GOV-01-2.3,Non-Bypassable Event Emission,ISO/IEC 27001,Logging and Monitoring,A.8.15,aligned,"Event logging requirement"
+HHI-GOV-01-2.4,Evidence & Ledger Invariants,ISO/IEC 27001,Integrity Controls,A.8.10,aligned,"Integrity and immutability"
+HHI-GOV-01-2.5,Drift Detection,ISO/IEC 27001,Continuous Monitoring,A.8.16,analogous,"Longitudinal monitoring concept"
+HHI-GOV-01-2.6,Escalation Enforcement,ISO/IEC 27001,Incident Management,A.5.24,aligned,"Escalation paths"
+HHI-GOV-01-2.7,Governance Failure Response,ISO/IEC 27001,Incident Response,A.5.25,aligned,"Failure handling"
+HHI-GOV-01-2.8,Separation of Powers,ISO/IEC 27001,Segregation of Duties,A.5.3,aligned,"Structural separation"
+HHI-GOV-01-3,Negative Evidence Requirement,ISO/IEC 27001,Audit and Assurance,A.5.35,analogous,"Detection of absence"
+HHI-GOV-01-4,Proof & Falsifiability Criteria,ISO/IEC 27001,Audit Controls,A.5.36,aligned,"Evidence-based verification"

@@ -1,0 +1,12 @@
+name: HHI Governance Check
+
+on: [push, pull_request]
+
+jobs:
+  governance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify governance reference
+        run: |
+          grep -q "HHI_GOV_01" README.md

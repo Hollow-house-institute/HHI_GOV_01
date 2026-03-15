@@ -1,0 +1,6 @@
+# Local audit and packaging artifacts
+AUDIT/
+CERTIFICATION/
+INTERACTION/
+HHI_Standards_Release_*.zip
+HHI_Standards_Release_*.sha256
