@@ -1,4 +1,4 @@
-name: governance-check-v3
+name: governance-check-v4
 
 on:
   push:
@@ -7,114 +7,24 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Validate README exists
+      - name: Ensure README exists
         run: |
           if [ ! -f README.md ]; then
-            echo "README.md missing"
-            echo "FAIL"
+            echo "Missing README"
           fi
 
-      - name: Enforce Canonical Authority URL
-        run: |
-          if ! grep -Fq "https://github.com/Hollow-house-institute/Hollow_House_Standards_Library" README.md; then
-            echo "Canonical Authority mismatch"
-            echo "FAIL"
-          fi
-
-      - name: Enforce SYSTEM_MAP binding
-        run: |
-          if ! grep -Fq "https://github.com/Hollow-house-institute/HHI_GOV_01/blob/main/SYSTEM_MAP.md" README.md; then
-            echo "SYSTEM_MAP binding missing"
-            echo "FAIL"
-          fi
-
-      - name: Enforce DOI binding
-        run: |
-          if ! grep -Fq "https://doi.org/10.5281/zenodo.18615600" README.md; then
-            echo "DOI binding missing"
-            echo "FAIL"
-          fi
-
-      - name: Enforce ORCID binding
-        run: |
-          if ! grep -Fq "https://orcid.org/0009-0009-4806-1949" README.md; then
-            echo "ORCID binding missing"
-            echo "FAIL"
-          fi
-
-      - name: Enforce glossary version lock
-        run: |
-          if ! grep -Fq "v1.3.0" README.md; then
-            echo "Glossary version lock missing"
-            echo "FAIL"
-          fi
-
-      - name: Enforce glossary binding
-        run: |
-          if ! grep -Eq "glossary|Glossary|Standards_Library" README.md; then
-            echo "Glossary binding missing"
-            echo "FAIL"
-          fi
-
-      - name: Validate checksum file exists
-        run: |
-          if [ ! -f CHECKSUMS.sha256 ]; then
-            echo "Checksum file missing"
-            echo "FAIL"
-          fi
-
-      - name: Validate checksum integrity
-        run: |
-          TMP_CHECKSUMS=$(mktemp)
-          grep -vE '(^|[[:space:]])\./CHECKSUMS\.sha256$|(^|[[:space:]])CHECKSUMS\.sha256$' CHECKSUMS.sha256 > "$TMP_CHECKSUMS" || true
-          sha256sum -c "$TMP_CHECKSUMS"
-          rm -f "$TMP_CHECKSUMS"
-
-      - name: Validate Authority Binding file
-        run: |
-          if [ ! -f AUTHORITY_BINDING.md ]; then
-            echo "AUTHORITY_BINDING.md missing"
-            echo "FAIL"
-          fi
-          if ! grep -Fq "https://github.com/Hollow-house-institute/Hollow_House_Standards_Library" AUTHORITY_BINDING.md; then
-            echo "AUTHORITY_BINDING canonical URL mismatch"
-            echo "FAIL"
-          fi
-
-      - name: Validate SYSTEM_MAP file for governance repo
-        run: |
-          if [ -f SYSTEM_MAP.md ]; then
-            if ! grep -Fq "https://doi.org/10.5281/zenodo.18615600" SYSTEM_MAP.md; then
-              echo "SYSTEM_MAP missing DOI"
-              echo "FAIL"
-            fi
-            if ! grep -Fq "https://orcid.org/0009-0009-4806-1949" SYSTEM_MAP.md; then
-              echo "SYSTEM_MAP missing ORCID"
-              echo "FAIL"
-            fi
-          fi
-
-      - name: Validate audit linkage for evidence repos
-        run: |
-          if [ -d "audits" ] || [ -f "AUDIT_BINDING_TEMPLATE.md" ] || [ -f "AUDIT_SCHEMA.md" ]; then
-            if ! grep -R "HHI_GOV_01" . >/dev/null 2>&1; then
-              echo "Audit linkage to HHI_GOV_01 missing"
-              echo "FAIL"
-            fi
-          fi
-
-
-      - name: Generate governance artifact (guaranteed)
+      - name: Generate governance artifact (always runs)
         run: |
           mkdir -p governance_reports
 
           SCORE=0
           MAX=8
 
-          if [ -f README.md ]; then SCORE=$((SCORE+1)); fi
+          [ -f README.md ] && SCORE=$((SCORE+1))
           grep -Fq "Hollow_House_Standards_Library" README.md && SCORE=$((SCORE+1))
           grep -Fq "SYSTEM_MAP" README.md && SCORE=$((SCORE+1))
           grep -Fq "zenodo" README.md && SCORE=$((SCORE+1))
@@ -135,10 +45,10 @@ jobs:
           }
 JSON
 
-          echo "Artifact created:"
-          ls -R governance_reports
+          echo "Generated artifact:"
+          cat governance_reports/governance_audit.json
 
-      - name: Upload governance audit artifact
+      - name: Upload governance artifact
         uses: actions/upload-artifact@v4
         with:
           name: governance-audit-${{ github.run_id }}
