@@ -1,21 +1,59 @@
 name: governance-check
 
-on: [push]
+on:
+  push:
+  pull_request:
 
 jobs:
-  test:
+  validate:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Create artifact
+      - name: Run governance checks
         run: |
           mkdir -p governance_reports
-          echo '{"repo":"test","score":8,"max_score":8,"status":"pass"}' > governance_reports/governance_audit.json
+
+          SCORE=0
+          MAX=8
+
+          check () {
+            if eval "$1"; then
+              SCORE=$((SCORE+1))
+            fi
+          }
+
+          check "[ -f README.md ]"
+          check "grep -Fq 'Hollow_House_Standards_Library' README.md"
+          check "grep -Fq 'SYSTEM_MAP' README.md"
+          check "grep -Fq 'zenodo' README.md"
+          check "grep -Fq 'orcid' README.md"
+          check "grep -Fq 'v1.3.0' README.md"
+          check "[ -f CHECKSUMS.sha256 ]"
+          check "[ -f AUTHORITY_BINDING.md ]"
+
+          STATUS="fail"
+          if [ "$SCORE" -ge 7 ]; then STATUS="pass"; fi
+
+          cat > governance_reports/governance_audit.json << JSON
+          {
+            "repo": "${GITHUB_REPOSITORY}",
+            "score": $SCORE,
+            "max_score": $MAX,
+            "status": "$STATUS"
+          }
+JSON
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: governance-audit
+          name: governance-audit-${{ github.run_id }}
           path: governance_reports
+
+      - name: Enforce threshold
+        run: |
+          if [ "$STATUS" != "pass" ]; then
+            echo "Governance threshold not met"
+            exit 1
+          fi
