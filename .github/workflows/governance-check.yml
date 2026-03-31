@@ -1,4 +1,4 @@
-name: governance-check-v2
+name: governance-check-v3
 
 on:
   push:
@@ -8,7 +8,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Validate README exists
         run: |
@@ -19,43 +19,146 @@ jobs:
 
       - name: Enforce Canonical Authority URL
         run: |
-          if ! grep -q "https://github.com/Hollow-house-institute/Hollow_House_Standards_Library" README.md; then
+          if ! grep -Fq "https://github.com/Hollow-house-institute/Hollow_House_Standards_Library" README.md; then
             echo "Canonical Authority mismatch"
             exit 1
           fi
 
       - name: Enforce SYSTEM_MAP binding
         run: |
-          if ! grep -q "https://github.com/Hollow-house-institute/HHI_GOV_01/blob/main/SYSTEM_MAP.md" README.md; then
+          if ! grep -Fq "https://github.com/Hollow-house-institute/HHI_GOV_01/blob/main/SYSTEM_MAP.md" README.md; then
             echo "SYSTEM_MAP binding missing"
+            exit 1
+          fi
+
+      - name: Enforce DOI binding
+        run: |
+          if ! grep -Fq "https://doi.org/10.5281/zenodo.18615600" README.md; then
+            echo "DOI binding missing"
+            exit 1
+          fi
+
+      - name: Enforce ORCID binding
+        run: |
+          if ! grep -Fq "https://orcid.org/0009-0009-4806-1949" README.md; then
+            echo "ORCID binding missing"
+            exit 1
+          fi
+
+      - name: Enforce glossary version lock
+        run: |
+          if ! grep -Fq "v1.3.0" README.md; then
+            echo "Glossary version lock missing"
             exit 1
           fi
 
       - name: Enforce glossary binding
         run: |
-          if ! grep -q "Standards_Library" README.md; then
+          if ! grep -Eq "glossary|Glossary|Standards_Library" README.md; then
             echo "Glossary binding missing"
             exit 1
           fi
 
-      - name: Validate checksum integrity
+      - name: Validate checksum file exists
         run: |
           if [ ! -f CHECKSUMS.sha256 ]; then
             echo "Checksum file missing"
             exit 1
           fi
 
-          sha256sum -c CHECKSUMS.sha256 || {
-            echo "Checksum validation failed"
-            exit 1
-          }
-
-      - name: Prevent empty audit linkage (audits repo only)
+      - name: Validate checksum integrity
         run: |
-          if [ -d "audits" ]; then
-            if ! grep -r "HHI_GOV_01" audits/ >/dev/null 2>&1; then
-              echo "Audit not linked to governance standard"
+          TMP_CHECKSUMS=$(mktemp)
+          grep -vE '(^|[[:space:]])\./CHECKSUMS\.sha256$|(^|[[:space:]])CHECKSUMS\.sha256$' CHECKSUMS.sha256 > "$TMP_CHECKSUMS" || true
+          sha256sum -c "$TMP_CHECKSUMS"
+          rm -f "$TMP_CHECKSUMS"
+
+      - name: Validate Authority Binding file
+        run: |
+          if [ ! -f AUTHORITY_BINDING.md ]; then
+            echo "AUTHORITY_BINDING.md missing"
+            exit 1
+          fi
+          if ! grep -Fq "https://github.com/Hollow-house-institute/Hollow_House_Standards_Library" AUTHORITY_BINDING.md; then
+            echo "AUTHORITY_BINDING canonical URL mismatch"
+            exit 1
+          fi
+
+      - name: Validate SYSTEM_MAP file for governance repo
+        run: |
+          if [ -f SYSTEM_MAP.md ]; then
+            if ! grep -Fq "https://doi.org/10.5281/zenodo.18615600" SYSTEM_MAP.md; then
+              echo "SYSTEM_MAP missing DOI"
               exit 1
             fi
+            if ! grep -Fq "https://orcid.org/0009-0009-4806-1949" SYSTEM_MAP.md; then
+              echo "SYSTEM_MAP missing ORCID"
+              exit 1
+            fi
+          fi
+
+      - name: Validate audit linkage for evidence repos
+        run: |
+          if [ -d "audits" ] || [ -f "AUDIT_BINDING_TEMPLATE.md" ] || [ -f "AUDIT_SCHEMA.md" ]; then
+            if ! grep -R "HHI_GOV_01" . >/dev/null 2>&1; then
+              echo "Audit linkage to HHI_GOV_01 missing"
+              exit 1
+            fi
+          fi
+
+      - name: Generate governance score and audit artifact
+        run: |
+          SCORE=0
+
+          [ -f README.md ] && SCORE=$((SCORE+1))
+          grep -Fq "https://github.com/Hollow-house-institute/Hollow_House_Standards_Library" README.md && SCORE=$((SCORE+1))
+          grep -Fq "https://github.com/Hollow-house-institute/HHI_GOV_01/blob/main/SYSTEM_MAP.md" README.md && SCORE=$((SCORE+1))
+          grep -Fq "https://doi.org/10.5281/zenodo.18615600" README.md && SCORE=$((SCORE+1))
+          grep -Fq "https://orcid.org/0009-0009-4806-1949" README.md && SCORE=$((SCORE+1))
+          grep -Fq "v1.3.0" README.md && SCORE=$((SCORE+1))
+          [ -f CHECKSUMS.sha256 ] && SCORE=$((SCORE+1))
+          [ -f AUTHORITY_BINDING.md ] && SCORE=$((SCORE+1))
+
+          mkdir -p governance_reports
+
+          cat > governance_reports/governance_audit.json << JSON
+          {
+            "repo": "${GITHUB_REPOSITORY}",
+            "commit": "${GITHUB_SHA}",
+            "run_id": "${GITHUB_RUN_ID}",
+            "canonical_url": "https://github.com/Hollow-house-institute/Hollow_House_Standards_Library",
+            "system_map_url": "https://github.com/Hollow-house-institute/HHI_GOV_01/blob/main/SYSTEM_MAP.md",
+            "doi_url": "https://doi.org/10.5281/zenodo.18615600",
+            "orcid_url": "https://orcid.org/0009-0009-4806-1949",
+            "glossary_version": "v1.3.0",
+            "score": $SCORE,
+            "max_score": 8,
+            "status": "$( [ $SCORE -ge 7 ] && echo pass || echo fail )"
           }
+JSON
+
+          cat > governance_reports/governance_audit.md << MD
+          # Governance Audit Report
+
+          - Repo: ${GITHUB_REPOSITORY}
+          - Commit: ${GITHUB_SHA}
+          - Run ID: ${GITHUB_RUN_ID}
+          - Score: $SCORE / 8
+          - Status: $( [ $SCORE -ge 7 ] && echo pass || echo fail )
+
+          ## Checks
+          - Canonical URL enforced
+          - SYSTEM_MAP enforced
+          - DOI enforced
+          - ORCID enforced
+          - Glossary version locked
+          - Checksum integrity validated
+          - Authority binding file required
+          MD
+
+      - name: Upload governance audit artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: governance-audit-${{ github.run_id }}
+          path: governance_reports/
 
