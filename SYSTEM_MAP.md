@@ -5,25 +5,29 @@
 - DOI: https://doi.org/10.5281/zenodo.18615600
 
 ## CANONICAL LAYER
-- Hollow_House_Standards_Library
-- Role: Definitions / Terminology Authority
+- Repository: Hollow_House_Standards_Library
+- URL: https://github.com/Hollow-house-institute/Hollow_House_Standards_Library
+- Role: Definitions / terminology authority
 
 ## GOVERNANCE STANDARDS LAYER
-- HHI_GOV_01
+- Repository: HHI_GOV_01
+- URL: https://github.com/Hollow-house-institute/HHI_GOV_01
 - Role: Execution-Time Governance
 
 ## LICENSING LAYER
-- Master_License_Suite
-- Role: Enforcement Authority
+- Repository: Master_License_Suite
+- URL: https://github.com/Hollow-house-institute/Master_License_Suite
+- Role: Licensing and enforcement authority
 
 ## EVIDENCE LAYER
-- HHI_Audits
-- Role: Audit + Interaction Trace
+- Repository: HHI_Audits
+- Role: Audit artifacts, evidence, interaction trace
 
-## PUBLIC SURFACE
-- LinkedIn
-- DEV
+## GOVERNANCE SURFACE
 - GitHub
+- DEV
+- LinkedIn
+- DOI / ORCID identity layer
 
 ## RULE
-All downstream systems MUST bind to upstream canonical definitions.
+All downstream repositories MUST bind to upstream canonical definitions and governance references.
