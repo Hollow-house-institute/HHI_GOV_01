@@ -1,6 +1,9 @@
 name: governance-check
 
 on:
+  workflow_dispatch:
+  push:
+  pull_request:
   push:
   pull_request:
 
