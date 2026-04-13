@@ -39,13 +39,8 @@ jobs:
           STATUS="fail"
           if [ "$SCORE" -ge 7 ]; then STATUS="pass"; fi
 
-          cat > governance_reports/governance_audit.json << JSON
-          {
-            "repo": "${GITHUB_REPOSITORY}",
-            "score": $SCORE,
-            "max_score": $MAX,
-            "status": "$STATUS"
-          }
+echo "{"repo": "${GITHUB_REPOSITORY}", "score": $SCORE, "max_score": $MAX, "status": "${STATUS}"}" > governance_reports/governance_audit.json
+
 JSON
 
       - name: Upload artifact
