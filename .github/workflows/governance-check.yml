@@ -1,9 +1,6 @@
 name: governance-check
 
 on:
-  workflow_dispatch:
-  push:
-  pull_request:
   push:
   pull_request:
 
@@ -39,9 +36,7 @@ jobs:
           STATUS="fail"
           if [ "$SCORE" -ge 7 ]; then STATUS="pass"; fi
 
-echo "{"repo": "${GITHUB_REPOSITORY}", "score": $SCORE, "max_score": $MAX, "status": "${STATUS}"}" > governance_reports/governance_audit.json
-
-JSON
+          echo "{\"repo\":\"$GITHUB_REPOSITORY\",\"score\":$SCORE,\"max_score\":$MAX,\"status\":\"$STATUS\"}" > governance_reports/governance_audit.json
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -49,9 +44,8 @@ JSON
           name: governance-audit-${{ github.run_id }}
           path: governance_reports
 
-      - name: Enforce threshold
+      - name: Enforce threshold (non-blocking)
         run: |
           if [ "$STATUS" != "pass" ]; then
-            echo "Governance threshold not met"
-            echo "missing reference (non-blocking)"
+            echo "Governance threshold not met (non-blocking)"
           fi
