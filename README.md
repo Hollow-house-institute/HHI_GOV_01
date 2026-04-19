@@ -210,3 +210,8 @@ ORCID: https://orcid.org/0009-0009-4806-1949
 
 Glossary Version: v1.3.0
 <!-- HHI_AUTHORITY_BLOCK_END -->
+
+## Enforcement Statement
+
+Authority is enforced through explicit Decision Boundaries, escalation thresholds, and Stop Authority conditions.
+
