@@ -20,7 +20,7 @@ jobs:
       - name: Enforce License Authority
         run: |
           echo "Checking for CC license drift..."
-          grep -r "CC BY" . --exclude-dir=archive --exclude=LICENSE_AUTHORITY.md && echo "FAIL: License drift detected" && echo "license drift detected (non-blocking)" || echo "PASS"
+          grep -r "CC BY" . --exclude-dir=archive --exclude-dir=.github --exclude=LICENSE_AUTHORITY.md && echo "FAIL: License drift detected" && echo "license drift detected (non-blocking)" || echo "PASS"
 
       - name: Enforce Canonical Terms
         run: |
