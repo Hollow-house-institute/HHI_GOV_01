@@ -1,3 +1,39 @@
+## Status: NON-CANONICAL (DEVELOPMENT ONLY)
+
+Canonical source:
+https://github.com/Hollow-house-institute/HHI_GOV_01
+
+Not valid for audit, licensing, or enforcement.
+
+---
+
+## Status: NON-CANONICAL (DEVELOPMENT ONLY)
+
+Canonical source:
+https://github.com/Hollow-house-institute/HHI_GOV_01
+
+Not valid for audit, licensing, or enforcement.
+
+---
+
+## Status: NON-CANONICAL (DEVELOPMENT ONLY)
+
+Canonical source:
+https://github.com/Hollow-house-institute/HHI_GOV_01
+
+Not valid for audit, licensing, or enforcement.
+
+---
+
+## Status: NON-CANONICAL (DEVELOPMENT ONLY)
+
+Canonical source:
+https://github.com/Hollow-house-institute/HHI_GOV_01
+
+Not valid for audit, licensing, or enforcement.
+
+---
+
 # HHI_GOV_01
 ## Longitudinal Governance Infrastructure
 ## Authority & Dependency Chain
