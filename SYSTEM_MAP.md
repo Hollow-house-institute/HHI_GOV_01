@@ -21,6 +21,7 @@
 
 ## EVIDENCE LAYER
 - Repository: HHI_Audits
+- URL: https://github.com/Hollow-house-institute/HHI_Audits
 - Role: Audit artifacts, evidence, interaction trace
 
 ## GOVERNANCE SURFACE
@@ -30,4 +31,4 @@
 - DOI / ORCID identity layer
 
 ## RULE
-All downstream repositories MUST bind to upstream canonical definitions and governance references.
+All downstream repositories MUST bind to upstream canonical sources.
