@@ -32,3 +32,6 @@
 
 ## RULE
 All downstream repositories MUST bind to upstream canonical sources.
+## HUMAN EXECUTION LAYER
+- Execution Block Protocol (prevents drift at decision point)
+- Behavior Logging System (captures actions and outcomes)
