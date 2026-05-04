@@ -251,3 +251,14 @@ Glossary Version: v1.3.0
 
 Authority is enforced through explicit Decision Boundaries, escalation thresholds, and Stop Authority conditions.
 
+
+## Execution-Time Governance Audit Proof
+
+Release: https://github.com/Hollow-house-institute/HHI_GOV_01/releases/tag/v1.0.1-execution-governance-proof
+
+Includes:
+- Decision Boundary enforcement
+- Stop Authority trigger
+- Governance Telemetry
+- Interaction Trace
+- SHA-256 checksum validation
