@@ -11,3 +11,11 @@ jobs:
             echo "STOP AUTHORITY: Accountability not bound"
             exit 1
           fi
+
+      - name: Escalation Enforcement
+        run: |
+          FAIL_COUNT=$(grep -c '"decision_boundary":"fail"' telemetry/governance_telemetry.jsonl || true)
+          if [ "$FAIL_COUNT" -ge 1 ]; then
+            echo "ESCALATION: Intervention Threshold reached"
+            exit 1
+          fi
