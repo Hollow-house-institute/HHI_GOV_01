@@ -1,30 +1,13 @@
-name: Governance Enforcement
-
-on:
-  push:
-  pull_request:
-
+name: governance-enforce
+on: [push]
 jobs:
   enforce:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Enforce Governance Boundary
+      - uses: actions/checkout@v3
+      - name: Decision Boundary Check
         run: |
-          echo "Checking for execution artifacts in root..."
-          ls | grep -E 'datasets|pipeline|releases|dataset_license|Docs' && echo "FAIL: Execution artifacts present" && echo "license drift detected (non-blocking)" || echo "PASS"
-
-      - name: Enforce License Authority
-        run: |
-          echo "Checking for CC license drift..."
-          grep -r "CC BY" . --exclude-dir=archive --exclude-dir=.github --exclude=LICENSE_AUTHORITY.md && echo "FAIL: License drift detected" && echo "license drift detected (non-blocking)" || echo "PASS"
-
-      - name: Enforce Canonical Terms
-        run: |
-          echo "Checking for required governance terms..."
-          grep -q "Decision Boundary" README.md || (echo "FAIL: Missing Decision Boundary" && echo "license drift detected (non-blocking)")
-          grep -q "Stop Authority" GOVERNANCE.md || (echo "FAIL: Missing Stop Authority" && echo "license drift detected (non-blocking)")
-          echo "PASS"
+          if ! grep -q "accountability_owner" telemetry/governance_telemetry.jsonl; then
+            echo "STOP AUTHORITY: Accountability not bound"
+            exit 1
+          fi
