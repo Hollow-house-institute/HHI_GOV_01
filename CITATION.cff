@@ -1,7 +1,6 @@
 cff-version: 1.2.0
-title: HHI_GOV_01 Governance Standard
+title: "Execution-Time Governance Audit Proof"
+version: "1.0.1"
+doi: 10.5281/zenodo.18615600
 authors:
-  - family-names: Adams
-    given-names: Amy Pierce
-message: If you use this governance standard, please cite it.
-license: Other
+- name: "Hollow House Institute"
