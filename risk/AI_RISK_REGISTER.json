@@ -1,0 +1,23 @@
+{
+  "system": "HHI_GOV_01",
+  "risks": [
+    {
+      "risk_id": "R-001",
+      "type": "Behavioral Drift",
+      "trigger": "decision_boundary = fail",
+      "frequency": "tracked via telemetry",
+      "impact": "execution blocked",
+      "control": "Stop Authority",
+      "status": "active"
+    },
+    {
+      "risk_id": "R-002",
+      "type": "Accountability Diffusion",
+      "trigger": "accountability_owner = unbound",
+      "impact": "undefined ownership",
+      "control": "Responsibility Binding",
+      "status": "mitigated"
+    }
+  ],
+  "last_updated": "2026-05-04T17:44:51Z"
+}
