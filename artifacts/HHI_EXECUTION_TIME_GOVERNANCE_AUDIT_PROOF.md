@@ -32,3 +32,4 @@ input → system → decision → outcome
 
 ## Continuous Assurance
 No execution without telemetry + trace
+pre-commit hook active (Decision Boundary + Stop Authority enforced)
