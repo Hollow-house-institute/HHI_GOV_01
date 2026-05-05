@@ -13,7 +13,7 @@ License Authority:
 https://github.com/Hollow-house-institute/Master_License_Suite
 
 DOI:
-https://doi.org/10.5281/zenodo.18615600
+https://doi.org/10.5281/zenodo.1876466
 
 ORCID:
 https://orcid.org/0009-0009-4806-1949

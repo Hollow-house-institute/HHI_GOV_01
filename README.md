@@ -220,10 +220,10 @@ SYSTEM MAP:
 https://github.com/Hollow-house-institute/HHI_GOV_01/blob/main/SYSTEM_MAP.md  
 
 Primary DOI (Execution-Time Governance):  
-https://doi.org/10.5281/zenodo.20042925  
+https://doi.org/10.5281/zenodo.1876466  
 
 Upstream DOI (Terminology Authority):  
-https://doi.org/10.5281/zenodo.18615600  
+https://doi.org/10.5281/zenodo.1876466  
 
 ORCID:  
 https://orcid.org/0009-0009-4806-1949  
@@ -251,7 +251,7 @@ Includes:
 ## GOVERNANCE STATUS (NON-BYPASSABLE)
 
 - Canonical Release: execution-time-governance-v1.0.0
-- DOI: https://doi.org/10.5281/zenodo.20042925
+- DOI: https://doi.org/10.5281/zenodo.1876466
 - Authority Chain: authority/AUTHORITY_CHAIN_TRACE.json
 - Checksum: authority/AUTHORITY_CHAIN_TRACE.sha256
 

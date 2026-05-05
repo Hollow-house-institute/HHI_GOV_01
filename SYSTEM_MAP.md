@@ -2,7 +2,7 @@
 
 ## IDENTITY LAYER
 - ORCID: https://orcid.org/0009-0009-4806-1949
-- DOI: https://doi.org/10.5281/zenodo.18615600
+- DOI: https://doi.org/10.5281/zenodo.1876466
 
 ## CANONICAL LAYER
 - Repository: Hollow_House_Standards_Library
