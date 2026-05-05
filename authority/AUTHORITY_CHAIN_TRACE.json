@@ -1,0 +1,1 @@
+{"event":"AUTHORITY_CHAIN_INDEX","actor":"system","decision_boundary":"AUDIT_LAYER","action":"BIND_FULL_CHAIN","outcome":"ENFORCED","chain":["telemetry_log","checksum","ci_validation","github_release","doi"],"release":"execution-time-governance-v1.0.0","doi":"10.5281/zenodo.20042925","timestamp":"2026-05-05T18:34:26Z"}
