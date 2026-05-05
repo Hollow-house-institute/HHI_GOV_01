@@ -240,3 +240,12 @@ Includes:
 - SHA-256 checksum validation
 
 [![DOI](https://zenodo.org/badge/1135368168.svg)](https://doi.org/10.5281/zenodo.20041931)
+
+## GOVERNANCE STATUS (NON-BYPASSABLE)
+
+- Canonical Release: execution-time-governance-v1.0.0
+- DOI: https://doi.org/10.5281/zenodo.20042925
+- Authority Chain: authority/AUTHORITY_CHAIN_TRACE.json
+- Checksum: authority/AUTHORITY_CHAIN_TRACE.sha256
+
+All system validity depends on this chain. Any artifact not bound to this chain is non-authoritative.
