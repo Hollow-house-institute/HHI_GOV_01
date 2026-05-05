@@ -9,3 +9,4 @@
 {"event":"AUTHORITY_CHAIN_COMPLETE","scope":"system","status":"VERIFIED","timestamp":"2026-05-05T16:49:51Z"}
 {"event":"DECISION_BOUNDARY_INITIALIZED","actor":"system","decision_boundary":"SYSTEM_INIT","action":"CREATE_BOUNDARY_MAP","outcome":"ENFORCED","escalation":false,"timestamp":"2026-05-05T16:52:05Z"}
 {"event":"TELEMETRY_SCHEMA_UPGRADE","actor":"system","decision_boundary":"LOG_SCHEMA","action":"EXPAND_FIELDS","outcome":"ENFORCED","escalation":false,"trace_id":"5f74db00-43af-4ef9-b645-c6a2be7b4c4b","session_id":"9b30291d-371e-4324-8641-3dc2185a47e8","timestamp":"2026-05-05T16:55:12Z"}
+{"event":"DOI_MINTED","actor":"system","decision_boundary":"AUTHORITY_CHAIN","action":"BIND_RELEASE","outcome":"ENFORCED","doi":"10.5281/zenodo.REPLACE","escalation":false,"timestamp":"2026-05-05T18:12:24Z"}
