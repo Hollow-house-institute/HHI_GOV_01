@@ -7,3 +7,4 @@
 {"event":"TELEMETRY_BOUND","scope":"repo","status":"LOGGED"}
 {"event":"ORG_README_UPDATED","scope":"org","status":"VISIBLE"}
 {"event":"AUTHORITY_CHAIN_COMPLETE","scope":"system","status":"VERIFIED","timestamp":"2026-05-05T16:49:51Z"}
+{"event":"DECISION_BOUNDARY_INITIALIZED","actor":"system","decision_boundary":"SYSTEM_INIT","action":"CREATE_BOUNDARY_MAP","outcome":"ENFORCED","escalation":false,"timestamp":"2026-05-05T16:52:05Z"}

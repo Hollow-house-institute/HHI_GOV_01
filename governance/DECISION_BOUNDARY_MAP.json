@@ -1,0 +1,6 @@
+{
+  "decision_boundaries":[
+    {"id":"DB-001","action":"WRITE_TELEMETRY","condition":"pre_execution_required","allowed":true,"escalation_threshold":"NONE","stop_authority":false,"accountable_role":"system"},
+    {"id":"DB-002","action":"MODIFY_GOVERNANCE_LOG","condition":"post_execution","allowed":false,"escalation_threshold":"IMMEDIATE","stop_authority":true,"accountable_role":"human_in_the_loop"}
+  ]
+}
