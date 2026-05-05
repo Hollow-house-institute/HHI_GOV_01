@@ -1,0 +1,7 @@
+{
+  "artifact": "authority/AUDIT_READY_STATE.json",
+  "authority_state": "AUDIT_READY",
+  "checksum_bound": true,
+  "traceability": "COMPLETE",
+  "status": "ACTIVE"
+}
