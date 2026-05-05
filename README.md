@@ -1,27 +1,3 @@
-## Status: NON-CANONICAL (DEVELOPMENT ONLY)
-
-Canonical source:
-https://github.com/Hollow-house-institute/HHI_GOV_01
-
-Not valid for audit, licensing, or enforcement.
-
----
-
-## Status: NON-CANONICAL (DEVELOPMENT ONLY)
-
-Canonical source:
-https://github.com/Hollow-house-institute/HHI_GOV_01
-
-Not valid for audit, licensing, or enforcement.
-
----
-
-## Status: NON-CANONICAL (DEVELOPMENT ONLY)
-
-Canonical source:
-https://github.com/Hollow-house-institute/HHI_GOV_01
-
-Not valid for audit, licensing, or enforcement.
 
 ---
 
