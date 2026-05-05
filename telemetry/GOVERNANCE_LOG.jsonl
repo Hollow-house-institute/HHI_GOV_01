@@ -28,3 +28,5 @@
 {"event":"NESTED_REPOSITORY_DRIFT","decision_boundary":"REPOSITORY_SURFACE","outcome":"DETECTED","timestamp":"2026-05-05T22:19:35Z"}
 {"event":"GOVERNANCE_LOCK_ENABLED","decision_boundary":"PRE_COMMIT_LAYER","outcome":"ENFORCED","timestamp":"2026-05-05T22:19:35Z"}
 {"event":"AUTO_GOVERNANCE_LOG","timestamp":"2026-05-05T22:25:19Z"}
+{"event":"AUTO_GOVERNANCE_LOG","timestamp":"2026-05-05T22:28:31Z"}
+{"event":"CANONICAL_DOI_REBOUND","decision_boundary":"AUTHORITY_LAYER","previous_doi":"10.5281/zenodo.18615600","current_doi":"10.5281/zenodo.20012282","reason":"41_TERM_CANONICAL_GLOSSARY_LOCK","outcome":"ENFORCED","timestamp":"2026-05-05T22:31:07Z"}
