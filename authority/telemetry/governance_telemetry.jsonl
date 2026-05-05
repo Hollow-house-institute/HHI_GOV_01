@@ -16,3 +16,7 @@
 {"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"ALLOW"}
 {"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"false"}
 {"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"2026-05-05T16:27:35Z"}
+{"event":"POST_HOC_EVENT","actor":"local_user","decision_boundary":"POST_HOC_GOVERNANCE","action":"RETROACTIVE_LOG","outcome":"ALLOW","escalation":true,"timestamp":"2026-05-05T16:28:31Z"}
+{"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"ALLOW"}
+{"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"false"}
+{"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"2026-05-05T16:28:32Z"}
