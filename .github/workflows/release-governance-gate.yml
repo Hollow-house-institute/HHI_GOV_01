@@ -1,0 +1,15 @@
+name: release-governance-gate
+on:
+  release:
+    types: [published]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: verify telemetry
+        run: test -f telemetry/GOVERNANCE_LOG.jsonl
+      - name: verify checksum
+        run: sha256sum -c telemetry/GOVERNANCE_LOG.sha256
+      - name: verify DOI present
+        run: grep -q "10.5281/zenodo.20042925" telemetry/GOVERNANCE_LOG.jsonl
