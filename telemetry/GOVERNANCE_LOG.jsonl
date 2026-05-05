@@ -16,3 +16,4 @@
 {"event":"AUTHORITY_CHAIN_BINDING","actor":"github_actions","decision_boundary":"RELEASE_STATE","action":"BIND_RELEASE_TO_DOI_AND_CI","outcome":"ENFORCED","release":"execution-time-governance-v1.0.0","doi":"10.5281/zenodo.20042925","ci_status":"REQUIRED_PASS","timestamp":"2026-05-05T18:33:01Z"}
 {"event":"RELEASE_INVALIDATED","release":"v1.0.0-governance-lock","decision_boundary":"RELEASE_LAYER","action":"RECLASSIFY_FAILURE_NOT_DELETE","outcome":"INVALIDATED","escalation":true,"timestamp":"2026-05-05T18:41:51Z"}
 {"event":"EXTERNAL_RELEASE_UNCONTROLLED","decision_boundary":"RELEASE_LAYER","action":"INVALIDATE_EXTERNAL_AUTHORITY","outcome":"NON_AUTHORITATIVE","escalation":true,"timestamp":"2026-05-05T18:45:33Z"}
+{"event":"DOI_REBIND","decision_boundary":"DOI_LAYER","action":"VALIDATE_AND_ATTACH","outcome":"ENFORCED","doi":"10.5281/zenodo.20042925","timestamp":"2026-05-05T18:50:15Z"}
