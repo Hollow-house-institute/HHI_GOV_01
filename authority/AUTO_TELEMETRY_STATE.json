@@ -1,0 +1,7 @@
+{
+  "event": "AUTO_TELEMETRY_ENABLED",
+  "decision_boundary": "POST_COMMIT_LAYER",
+  "telemetry_generation": "AUTOMATED",
+  "checksum_bound": true,
+  "status": "ACTIVE"
+}
