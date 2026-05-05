@@ -238,3 +238,5 @@ Includes:
 - Governance Telemetry
 - Interaction Trace
 - SHA-256 checksum validation
+
+[![DOI](https://zenodo.org/badge/1135368168.svg)](https://doi.org/10.5281/zenodo.20041931)
