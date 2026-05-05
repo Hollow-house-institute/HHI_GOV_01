@@ -20,3 +20,4 @@
 {"event":"DOI_AUTHORITY_BOUND","decision_boundary":"DOI_LAYER","action":"BIND_PRIMARY_DOI","outcome":"ENFORCED","doi":"10.5281/zenodo.20042925","release":"execution-time-governance-v1.0.0","timestamp":"2026-05-05T18:52:25Z"}
 {"event":"DOI_AUTHORITY_BOUND","decision_boundary":"DOI_LAYER","action":"BIND_PRIMARY_DOI","outcome":"ENFORCED","doi":"10.5281/zenodo.20042925","release":"execution-time-governance-v1.0.0","timestamp":"2026-05-05T18:52:53Z"}
 {"event":"GOVERNANCE_SURFACE_VIOLATION","actor":"local_user","decision_boundary":"REPO_SCOPE","action":"REMOVE_UNTRACKED_AND_STOP","outcome":"ENFORCED","escalation":true,"timestamp":"2026-05-05T18:57:01Z"}
+{"event":"RELEASE_METADATA_FIXED","actor":"local_user","decision_boundary":"RELEASE_LAYER","action":"EDIT_RELEASE_NOTES","outcome":"ENFORCED","release":"execution-time-governance-v1.0.0","doi":"10.5281/zenodo.20042925","timestamp":"2026-05-05T19:46:34Z"}
