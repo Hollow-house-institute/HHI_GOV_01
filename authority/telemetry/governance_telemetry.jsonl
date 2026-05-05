@@ -8,3 +8,7 @@
 {"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"ALLOW"}
 {"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"false"}
 {"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"2026-05-05T16:25:41Z"}
+{"event":"MANUAL_EVENT","actor":"local_user","decision_boundary":"MANUAL_LOG","action":"LOG_TELEMETRY","outcome":"ALLOW","escalation":false,"timestamp":"2026-05-05T16:26:47Z"}
+{"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"ALLOW"}
+{"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"false"}
+{"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"2026-05-05T16:26:47Z"}
