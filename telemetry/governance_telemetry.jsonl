@@ -4,3 +4,5 @@
 {"event":"pre_commit_check","decision_boundary":"enforced","stop_authority":"active","timestamp":"2026-05-05T15:40:56Z"}
 {"event":"pre_commit_check","decision_boundary":"enforced","stop_authority":"active","timestamp":"2026-05-05T15:55:33Z"}
 {"event":"pre_commit_check","decision_boundary":"enforced","stop_authority":"active","timestamp":"2026-05-05T15:56:35Z"}
+{"event":"pre_commit_check","decision_boundary":"enforced","stop_authority":"active","timestamp":"2026-05-05T15:57:21Z"}
+{"event":"pre_commit_check","decision_boundary":"enforced","stop_authority":"active","timestamp":"2026-05-05T15:58:54Z"}
