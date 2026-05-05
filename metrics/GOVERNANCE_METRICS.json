@@ -1,0 +1,15 @@
+{
+  "system": "HHI_GOV_01",
+  "metrics": {
+    "Governance Stability Index (GSI)": "calculated from decision_boundary pass rate",
+    "Authority Alignment Score (AAS)": "based on accountability_owner binding",
+    "Language Symmetry Score (LSS)": "consistency between expected and observed behavior",
+    "Relational Rhythm Index (RRI)": "pattern stability over time"
+  },
+  "data_sources": [
+    "telemetry/governance_telemetry.jsonl",
+    "traces/interaction_trace.json",
+    "risk/AI_RISK_REGISTER.json"
+  ],
+  "last_updated": "REPLACE_TIMESTAMP"
+}
