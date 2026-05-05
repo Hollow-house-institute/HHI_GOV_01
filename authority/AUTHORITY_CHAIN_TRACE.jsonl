@@ -1,0 +1,5 @@
+{"event":"DOI_AUTHORITY_NORMALIZED","doi":"10.5281/zenodo.20044740","outcome":"ENFORCED"}
+{"event":"GOVERNANCE_LAYER_RESTORED","outcome":"RECOVERED"}
+{"event":"STOP_AUTHORITY_ENABLED","protected_surface":".github/","outcome":"ACTIVE"}
+{"event":"NESTED_REPOSITORY_DRIFT","outcome":"DETECTED_AND_CONTAINED"}
+{"event":"AUTHORITY_ALIGNMENT_PENDING","outcome":"VISIBLE"}
