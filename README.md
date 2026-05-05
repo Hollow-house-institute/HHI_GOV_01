@@ -210,15 +210,23 @@ All terminology must remain consistent with the canonical glossary.
 <!-- HHI_AUTHORITY_BLOCK_START -->
 ## Authority & Canonical References
 
-Canonical Source: https://github.com/Hollow-house-institute/Hollow_House_Standards_Library
+Canonical Source (Terminology Layer):  
+https://github.com/Hollow-house-institute/Hollow_House_Standards_Library  
 
-Governance Standard: https://github.com/Hollow-house-institute/HHI_GOV_01
+Governance Standard (Execution Layer):  
+https://github.com/Hollow-house-institute/HHI_GOV_01  
 
-SYSTEM MAP: https://github.com/Hollow-house-institute/HHI_GOV_01/blob/main/SYSTEM_MAP.md
+SYSTEM MAP:  
+https://github.com/Hollow-house-institute/HHI_GOV_01/blob/main/SYSTEM_MAP.md  
 
-DOI: https://doi.org/10.5281/zenodo.18615600
+Primary DOI (Execution-Time Governance):  
+https://doi.org/10.5281/zenodo.20042925  
 
-ORCID: https://orcid.org/0009-0009-4806-1949
+Upstream DOI (Terminology Authority):  
+https://doi.org/10.5281/zenodo.18615600  
+
+ORCID:  
+https://orcid.org/0009-0009-4806-1949  
 
 Glossary Version: v1.3.0
 <!-- HHI_AUTHORITY_BLOCK_END -->
@@ -239,7 +247,6 @@ Includes:
 - Interaction Trace
 - SHA-256 checksum validation
 
-[![DOI](https://zenodo.org/badge/1135368168.svg)](https://doi.org/10.5281/zenodo.20041931)
 
 ## GOVERNANCE STATUS (NON-BYPASSABLE)
 
