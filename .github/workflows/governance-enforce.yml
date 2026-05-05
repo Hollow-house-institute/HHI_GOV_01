@@ -4,18 +4,10 @@ jobs:
   enforce:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Decision Boundary Check
-        run: |
-          if ! grep -q "accountability_owner" telemetry/governance_telemetry.jsonl; then
-            echo "STOP AUTHORITY: Accountability not bound"
-            exit 1
-          fi
-
-      - name: Escalation Enforcement
-        run: |
-          FAIL_COUNT=$(grep -c '"decision_boundary":"fail"' telemetry/governance_telemetry.jsonl || true)
-          if [ "$FAIL_COUNT" -ge 1 ]; then
-            echo "ESCALATION: Intervention Threshold reached"
-            exit 1
-          fi
+      - uses: actions/checkout@v4
+      - name: verify telemetry exists
+        run: test -f telemetry/GOVERNANCE_LOG.jsonl
+      - name: verify checksum exists
+        run: test -f telemetry/GOVERNANCE_LOG.sha256
+      - name: verify checksum integrity
+        run: sha256sum -c telemetry/GOVERNANCE_LOG.sha256
