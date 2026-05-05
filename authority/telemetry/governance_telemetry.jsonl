@@ -72,3 +72,6 @@
 {"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"ALLOW"}
 {"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"false"}
 {"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"2026-05-05T17:02:18Z"}
+{"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"ALLOW"}
+{"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"false"}
+{"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"","escalation":,"timestamp":"2026-05-05T17:03:02Z"}
