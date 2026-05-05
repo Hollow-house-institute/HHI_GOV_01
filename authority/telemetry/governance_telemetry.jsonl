@@ -1,2 +1,3 @@
 {"event":"GOVERNANCE_INIT","actor":"system","decision_boundary":"ENFORCED","action":"INIT","outcome":"ALLOW","timestamp":"2026-05-05T15:40:41Z"}
 {"event":"MANUAL_LOG","actor":"local_user","decision_boundary":"TELEMETRY_REQUIRED","action":"LOG_APPEND","outcome":"ALLOW","escalation":false,"timestamp":"2026-05-05T15:58:46Z"}
+{"event":"COMMIT","actor":"local_user","decision_boundary":"PRE_COMMIT","action":"COMMIT_ATTEMPT","outcome":"ALLOW","escalation":false,"timestamp":"2026-05-05T16:20:45Z"}
