@@ -2,3 +2,8 @@
 {"event":"RELEASE_CREATED","actor":"gh_cli","decision_boundary":"PUBLISH","outcome":"SUCCESS"}
 {"event":"DOI_MINTED","actor":"zenodo","decision_boundary":"PUBLISH","doi":"10.5281/zenodo.20041931","outcome":"SUCCESS"}
 {"event":"BADGE_BOUND","actor":"repo","decision_boundary":"VISIBILITY","outcome":"PUBLIC"}
+{"event":"RELEASE_CREATED","scope":"repo","status":"SUCCESS"}
+{"event":"DOI_MINTED","scope":"external","doi":"10.5281/zenodo.20041931","status":"SUCCESS"}
+{"event":"TELEMETRY_BOUND","scope":"repo","status":"LOGGED"}
+{"event":"ORG_README_UPDATED","scope":"org","status":"VISIBLE"}
+{"event":"AUTHORITY_CHAIN_COMPLETE","scope":"system","status":"VERIFIED","timestamp":"2026-05-05T16:49:51Z"}
