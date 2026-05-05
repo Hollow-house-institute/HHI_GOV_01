@@ -1,0 +1,14 @@
+{
+  "version": "1.1.0",
+  "fields": [
+    "event",
+    "actor",
+    "decision_boundary",
+    "action",
+    "outcome",
+    "escalation",
+    "trace_id",
+    "session_id",
+    "timestamp"
+  ]
+}
