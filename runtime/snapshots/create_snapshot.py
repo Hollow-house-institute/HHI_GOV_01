@@ -1,8 +1,8 @@
 import os
 import shutil
-from datetime import datetime
+from datetime import datetime, UTC
 
-TS=datetime.utcnow().strftime("%Y%m%d_%H%M%S")
+TS=datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
 
 SNAPSHOT_DIR=f"runtime/snapshots/{TS}"
 
