@@ -1,18 +1,18 @@
 {
-  "action": "EVENT_BUS_INITIALIZED",
-  "actor": "system",
+  "action": "PORT_COLLISION_DETECTED",
+  "actor": "runtime_api",
   "behavioral_drift_score": 0,
   "decision_boundary": "ENFORCED",
-  "escalation_level": "NONE",
-  "event_id": "dc5ba121-1cca-43fb-91c2-36c4375644ea",
-  "evidence_hash": "45b8498b720e8dc609cbb0cdcaada2cee9fcfb3acecdc370495c7e42e5ce2be4",
+  "escalation_level": "LOW",
+  "event_id": "90f63afe-c425-44a1-bdaf-5636d4dc53b2",
+  "evidence_hash": "f5378cb0c09f86baf46c3201bd8365b851a5a646da048da7c371744bb8ce522e",
   "governance_state": "ACTIVE",
   "intervention_status": "NONE",
-  "outcome": "APPEND_ONLY_LOG_ACTIVE",
-  "runtime_source": "termux_runtime",
-  "session_id": "default-session",
+  "outcome": "EXISTING_RUNTIME_CONFIRMED",
+  "runtime_source": "governance_runtime_api",
+  "session_id": "runtime-continuity-validation",
   "stop_authority": "INACTIVE",
   "system": "HHI_GOV_01",
-  "timestamp": "2026-05-08T03:45:00.403257+00:00",
-  "trace_id": "790d6489-7273-4742-bf38-1a96fe6bcdde"
+  "timestamp": "2026-05-08T03:50:49.286677+00:00",
+  "trace_id": "6e6ed40a-6654-428f-83a5-9f0493512661"
 }
