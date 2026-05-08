@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Governance Event Schema",
+  "type": "object",
+  "properties": {
+    "timestamp": { "type": "string" },
+    "event": { "type": "string" },
+    "decision_boundary": { "type": "string" },
+    "drift_status": { "type": "string" },
+    "stop_authority": { "type": "string" },
+    "escalation_state": { "type": "string" }
+  },
+  "required": [
+    "timestamp",
+    "event"
+  ]
+}
