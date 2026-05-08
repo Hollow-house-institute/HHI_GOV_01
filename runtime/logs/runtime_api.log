@@ -1,0 +1,7 @@
+nohup: ignoring input
+[2026-05-07 22:58:41 -0500] [20004] [INFO] Starting gunicorn 26.0.0
+[2026-05-07 22:58:41 -0500] [20004] [INFO] Listening at: http://0.0.0.0:8000 (20004)
+[2026-05-07 22:58:41 -0500] [20004] [INFO] Using worker: sync
+[2026-05-07 22:58:41 -0500] [20008] [INFO] Booting worker with pid: 20008
+[2026-05-07 22:58:41 -0500] [20009] [INFO] Booting worker with pid: 20009
+[2026-05-07 22:58:41 -0500] [20004] [INFO] Control socket listening at /data/data/com.termux/files/home/.gunicorn/gunicorn.ctl
