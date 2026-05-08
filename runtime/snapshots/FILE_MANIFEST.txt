@@ -189,11 +189,13 @@
 ./runtime/crosswalk/generate_crosswalk.py
 ./runtime/crosswalk/runtime_crosswalk.json
 ./runtime/dashboard/dashboard_status.py
+./runtime/escalation/escalation_engine.py
 ./runtime/exports/EXPORT_CHECKSUMS.sha256
 ./runtime/exports/HHI_GOVERNANCE_EXPORT_20260508_030847.zip
 ./runtime/exports/HHI_RUNTIME_GOVERNANCE_STACK_2026-05-08T03-12-30Z.zip
 ./runtime/exports/HHI_SIGNED_RUNTIME_RELEASE_20260508_031713.sha256
 ./runtime/exports/HHI_SIGNED_RUNTIME_RELEASE_20260508_031713.tar.gz
+./runtime/logs/escalation_status.json
 ./runtime/logs/governance_events.jsonl
 ./runtime/logs/governance_events.sha256
 ./runtime/logs/governance_telemetry.jsonl
