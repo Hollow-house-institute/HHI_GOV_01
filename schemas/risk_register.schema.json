@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Cyber Governance Risk Register",
+  "type": "object",
+  "properties": {
+    "Threat Vector": {"type":"string"},
+    "Governance Exposure": {"type":"string"},
+    "Decision Boundary": {"type":"string"},
+    "Escalation Threshold": {"type":"string"},
+    "Stop Authority Condition": {"type":"string"},
+    "Evidence Source": {"type":"string"}
+  },
+  "required": ["Threat Vector","Governance Exposure","Decision Boundary"]
+}

@@ -1,0 +1,2 @@
+{"event":"","actor":"","decision_boundary":"","action":"","outcome":"","escalation":false,"timestamp":""}
+{"event":"NISTIR_8596_ALIGNMENT_INITIALIZED","actor":"HHI_GOV_01","decision_boundary":"NIST_ALIGNMENT","action":"INITIALIZE_GOVERNANCE_BINDING","outcome":"ACTIVE","escalation":false,"timestamp":"2026-05-06T00:00:00Z"}

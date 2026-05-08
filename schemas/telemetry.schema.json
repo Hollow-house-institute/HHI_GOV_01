@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Governance Telemetry Log",
+  "type": "object",
+  "properties": {
+    "event":{"type":"string"},
+    "actor":{"type":"string"},
+    "decision_boundary":{"type":"string"},
+    "action":{"type":"string"},
+    "outcome":{"type":"string"},
+    "escalation":{"type":"boolean"},
+    "timestamp":{"type":"string"}
+  },
+  "required":["event","actor","decision_boundary","action","timestamp"]
+}

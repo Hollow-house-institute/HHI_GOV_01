@@ -1,0 +1,7 @@
+{
+  "framework":"NISTIR_8596",
+  "control_layer":"EXECUTION_TIME_GOVERNANCE",
+  "decision_boundary":"ENFORCED",
+  "stop_authority":"ACTIVE",
+  "continuous_assurance":"ACTIVE"
+}
