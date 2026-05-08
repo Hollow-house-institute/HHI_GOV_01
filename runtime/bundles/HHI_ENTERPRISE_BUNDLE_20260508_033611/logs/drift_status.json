@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-05-08T03:30:50.742577Z",
+  "drift_score": 1,
+  "drift_threshold": 10,
+  "behavioral_drift_status": "NORMAL"
+}
