@@ -1,17 +1,41 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Governance Event Schema",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HHI Governance Event Schema",
   "type": "object",
-  "properties": {
-    "timestamp": { "type": "string" },
-    "event": { "type": "string" },
-    "decision_boundary": { "type": "string" },
-    "drift_status": { "type": "string" },
-    "stop_authority": { "type": "string" },
-    "escalation_state": { "type": "string" }
-  },
   "required": [
+    "event_id",
     "timestamp",
-    "event"
-  ]
+    "actor",
+    "system",
+    "governance_state",
+    "decision_boundary",
+    "behavioral_drift_score",
+    "escalation_level",
+    "intervention_status",
+    "stop_authority",
+    "action",
+    "outcome",
+    "evidence_hash",
+    "session_id",
+    "trace_id",
+    "runtime_source"
+  ],
+  "properties": {
+    "event_id": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "actor": { "type": "string" },
+    "system": { "type": "string" },
+    "governance_state": { "type": "string" },
+    "decision_boundary": { "type": "string" },
+    "behavioral_drift_score": { "type": "number" },
+    "escalation_level": { "type": "string" },
+    "intervention_status": { "type": "string" },
+    "stop_authority": { "type": "string" },
+    "action": { "type": "string" },
+    "outcome": { "type": "string" },
+    "evidence_hash": { "type": "string" },
+    "session_id": { "type": "string" },
+    "trace_id": { "type": "string" },
+    "runtime_source": { "type": "string" }
+  }
 }

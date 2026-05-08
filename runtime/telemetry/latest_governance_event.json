@@ -1,0 +1,18 @@
+{
+  "action": "EVENT_BUS_INITIALIZED",
+  "actor": "system",
+  "behavioral_drift_score": 0,
+  "decision_boundary": "ENFORCED",
+  "escalation_level": "NONE",
+  "event_id": "dc5ba121-1cca-43fb-91c2-36c4375644ea",
+  "evidence_hash": "45b8498b720e8dc609cbb0cdcaada2cee9fcfb3acecdc370495c7e42e5ce2be4",
+  "governance_state": "ACTIVE",
+  "intervention_status": "NONE",
+  "outcome": "APPEND_ONLY_LOG_ACTIVE",
+  "runtime_source": "termux_runtime",
+  "session_id": "default-session",
+  "stop_authority": "INACTIVE",
+  "system": "HHI_GOV_01",
+  "timestamp": "2026-05-08T03:45:00.403257+00:00",
+  "trace_id": "790d6489-7273-4742-bf38-1a96fe6bcdde"
+}
