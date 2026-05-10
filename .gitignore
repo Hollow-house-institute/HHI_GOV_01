@@ -7,3 +7,9 @@ HHI_Standards_Release_*.sha256
 
 __pycache__/
 *.pyc
+
+*.pid
+__pycache__/
+*.pyc
+runtime/logs/*.pid
+logs/*.pid
