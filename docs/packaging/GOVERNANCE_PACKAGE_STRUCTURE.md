@@ -64,7 +64,7 @@ PACKAGE_NAME/
 ## Authority Footer
 
 Canonical Source:
-https://github.com/hhidatasettechs-oss/Hollow_House_Standards_Library
+https://github.com/Hollow-house-institute/Hollow_House_Standards_Library
 
 DOI:
 https://doi.org/10.5281/zenodo.20044740

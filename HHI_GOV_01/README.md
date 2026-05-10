@@ -151,7 +151,7 @@ external repositories. Such materials are **non-authoritative** and do
 not modify, extend, reinterpret, or supersede this standard.
 
 One example (audit evidence):
-https://github.com/hhidatasettechs-oss/HHIaudits/tree/main/reference_snapshots/governance_first_interaction_case
+https://github.com/Hollow-house-institute/HHIaudits/tree/main/reference_snapshots/governance_first_interaction_case
 
 ### Downstream Evidence Reference (Non-Authoritative)
 
@@ -159,7 +159,7 @@ The HHIaudits repository contains raw interaction evidence
 related to unstable mirror dynamics observed in AI systems.
 
 Referenced evidence set:
-- Repository: hhidatasettechs-oss/HHIaudits
+- Repository: Hollow-house-institute/HHIaudits
 - Chat Artifact Set: Unstable Mirrors (2026-02-12)
 
 Authority Note:

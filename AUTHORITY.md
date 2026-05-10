@@ -10,7 +10,7 @@ ORCID: https://orcid.org/0009-0009-4806-1949
 LinkedIn: https://www.linkedin.com/in/hollow-house-institute-3ab5a2182
 
 ## Canonical Glossary
-https://github.com/hhidatasettechs-oss/Hollow_House_Standards_Library
+https://github.com/Hollow-house-institute/Hollow_House_Standards_Library
 
 ## Scholarly Publication
 Zenodo DOI  

@@ -163,7 +163,7 @@ external repositories. Such materials are **non-authoritative** and do
 not modify, extend, reinterpret, or supersede this standard.
 
 One example (audit evidence):
-https://github.com/hhidatasettechs-oss/HHIaudits/tree/main/reference_snapshots/governance_first_interaction_case
+https://github.com/Hollow-house-institute/HHIaudits/tree/main/reference_snapshots/governance_first_interaction_case
 
 ### Downstream Evidence Reference (Non-Authoritative)
 
@@ -171,7 +171,7 @@ The HHIaudits repository contains raw interaction evidence
 related to unstable mirror dynamics observed in AI systems.
 
 Referenced evidence set:
-- Repository: hhidatasettechs-oss/HHIaudits
+- Repository: Hollow-house-institute/HHIaudits
 - Chat Artifact Set: Unstable Mirrors (2026-02-12)
 
 Authority Note:
@@ -189,7 +189,7 @@ All execution, datasets, research, and audits are bound to its standards and con
 The Hollow House Institute governance ecosystem includes a standards-grade audit prompt used to evaluate terminology compliance and structural governance alignment.
 
 Master Prompt Specification  
-https://github.com/hhidatasettechs-oss/Hollow_House_Standards_Library/blob/main/STANDARDS/MASTER_PROMPT_SPECIFICATION.md
+https://github.com/Hollow-house-institute/Hollow_House_Standards_Library/blob/main/STANDARDS/MASTER_PROMPT_SPECIFICATION.md
 
 
 ## Behavioral AI Governance Enforcement
@@ -197,7 +197,7 @@ https://github.com/hhidatasettechs-oss/Hollow_House_Standards_Library/blob/main/
 This repository aligns with the Hollow House Institute governance framework.
 
 Canonical reference:
-https://github.com/hhidatasettechs-oss/Hollow_House_Standards_Library
+https://github.com/Hollow-house-institute/Hollow_House_Standards_Library
 
 Enforced terms:
 - behavioral-ai-governance
