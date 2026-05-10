@@ -4,3 +4,6 @@ CERTIFICATION/
 INTERACTION/
 HHI_Standards_Release_*.zip
 HHI_Standards_Release_*.sha256
+
+__pycache__/
+*.pyc
