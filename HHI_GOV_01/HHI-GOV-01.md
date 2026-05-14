@@ -324,3 +324,15 @@ If authority shifts, judgment erodes, escalation decays, or accountability blurs
 ## Canonical Statement
 
 HHI-GOV-01 defines governance as the infrastructure that ensures authority, accountability, and escalation cannot drift over time without leaving auditable, reviewable, and enforceable evidence within the defined system boundary.
+
+https://github.com/Hollow-house-institute
+https://github.com/amypbui
+
+Amy Pierce Bui
+Hollow House Institute
+GitHub
+https://github.com/Hollow-house-institute
+https://github.com/Hollow-house-institute/Hollow_House_Standards_Library/agents?author=amypbui
+https://github.com/amypbui
+https://github.com/amypbui/HHI_Career_Runtime
+https://github.com/Hollow-house-institute/Master_License_Suite

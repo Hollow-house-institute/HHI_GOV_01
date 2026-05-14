@@ -3,7 +3,6 @@
 The Hollow House Institute maintains terminology and governance standards for Behavioral AI Governance.
 
 ## Maintainer
-Amy Pierce Adams
 
 ## Research Identity
 ORCID: https://orcid.org/0009-0009-4806-1949  
@@ -23,3 +22,15 @@ Execution-Time Governance
 
 Time turns behavior into infrastructure.
 Behavior is the most honest data there is.
+
+https://github.com/Hollow-house-institute
+https://github.com/amypbui
+
+Amy Pierce Bui
+Hollow House Institute
+GitHub
+https://github.com/Hollow-house-institute
+https://github.com/Hollow-house-institute/Hollow_House_Standards_Library/agents?author=amypbui
+https://github.com/amypbui
+https://github.com/amypbui/HHI_Career_Runtime
+https://github.com/Hollow-house-institute/Master_License_Suite

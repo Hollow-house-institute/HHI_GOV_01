@@ -256,3 +256,15 @@ Includes:
 - Checksum: authority/AUTHORITY_CHAIN_TRACE.sha256
 
 All system validity depends on this chain. Any artifact not bound to this chain is non-authoritative.
+
+https://github.com/Hollow-house-institute
+https://github.com/amypbui
+
+Amy Pierce Bui
+Hollow House Institute
+GitHub
+https://github.com/Hollow-house-institute
+https://github.com/Hollow-house-institute/Hollow_House_Standards_Library/agents?author=amypbui
+https://github.com/amypbui
+https://github.com/amypbui/HHI_Career_Runtime
+https://github.com/Hollow-house-institute/Master_License_Suite
