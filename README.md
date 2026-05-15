@@ -268,3 +268,8 @@ https://github.com/Hollow-house-institute/Hollow_House_Standards_Library/agents?
 https://github.com/amypbui
 https://github.com/amypbui/HHI_Career_Runtime
 https://github.com/Hollow-house-institute/Master_License_Suite
+
+---
+
+## HHI Ecosystem
+See: [TOP_5_HHI_REPOS.md](TOP_5_HHI_REPOS.md)
