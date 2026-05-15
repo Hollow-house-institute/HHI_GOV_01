@@ -1,4 +1,0 @@
-Governed under HHI_GOV_01 — Longitudinal Governance Infrastructure
-Canonical reference: https://github.com/Hollow-house-institute/HHI_GOV_01
-Use, redistribution, or derivation requires compliance with governance
-and applicable Hollow House Institute licenses.
