@@ -1,0 +1,20 @@
+{
+  "actor": "system",
+  "system": "hhi_runtime_enforcement_engine",
+  "session_id": "runtime-session",
+  "trace_id": "runtime-trace",
+  "workspace": "standards_library",
+  "decision_boundary": "LOCK_MANIFEST",
+  "behavioral_drift_score": 0.0,
+  "action": "ALLOW",
+  "violation_type": "NONE",
+  "severity": "LEVEL_1",
+  "escalation_level": "NONE",
+  "intervention_status": "NOT_REQUIRED",
+  "stop_authority": false,
+  "outcome": "APPROVED",
+  "runtime_source": "runtime_enforcement_engine",
+  "event_id": "905ad942-7d25-4dcb-9307-d719c46deb9c",
+  "timestamp": "2026-05-17T03:31:21.830422Z",
+  "evidence_hash": "sha256:927cc2e217e32e4530e0bae1b376f9181c9174dbde2d3401dcd547ab78f327cf"
+}
