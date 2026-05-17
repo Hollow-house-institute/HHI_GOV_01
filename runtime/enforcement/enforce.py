@@ -2,6 +2,7 @@ import json
 from precheck import precheck
 from telemetry import emit_governance_event
 from replay import replay_validate
+from escalation import update_escalation
 
 def enforce_hhi_governance(user_input):
     result = precheck(user_input)
@@ -26,10 +27,18 @@ def enforce_hhi_governance(user_input):
 
     telemetry_event = emit_governance_event(event)
 
+    escalation_state = None
+
+    if not result["ok"]:
+        escalation_state = update_escalation(
+            result["severity"]
+        )
+
     return {
         "input": user_input,
         "enforcement_result": result,
         "telemetry_event": telemetry_event,
+        "escalation_state": escalation_state,
         "replay_validation": replay_validate()
     }
 
