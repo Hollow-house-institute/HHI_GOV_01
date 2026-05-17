@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HHI Replay Manifest",
+  "type": "object",
+  "required": [
+    "trace_id",
+    "session_id",
+    "timestamp",
+    "input_hash",
+    "output_hash",
+    "telemetry_hash",
+    "evidence_hash",
+    "runtime_source"
+  ],
+  "properties": {
+    "trace_id": { "type": "string" },
+    "session_id": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "input_hash": { "type": "string" },
+    "output_hash": { "type": "string" },
+    "telemetry_hash": { "type": "string" },
+    "evidence_hash": { "type": "string" },
+    "runtime_source": { "type": "string" }
+  }
+}

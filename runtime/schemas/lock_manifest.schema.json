@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HHI LOCK_MANIFEST",
+  "type": "object",
+  "required": [
+    "version",
+    "manifest_hash",
+    "frozen_terms",
+    "immutable_principles",
+    "prohibit"
+  ],
+  "properties": {
+    "version": { "type": "string" },
+    "manifest_hash": { "type": "string" },
+    "frozen_terms": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "immutable_principles": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "prohibit": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
