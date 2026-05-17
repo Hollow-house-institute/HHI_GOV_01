@@ -351,3 +351,5 @@ https://orcid.org/0009-0009-4806-1949
 
 Amy Pierce Bui
 Founder, Hollow House Institute
+
+- [HHI Runtime Enforcement Engine](specifications/runtime/HHI_SPEC_RUNTIME_ENFORCEMENT_ENGINE_01.md)
