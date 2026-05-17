@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "HHI Governance Event",
+  "type": "object",
+  "required": [
+    "event_id",
+    "timestamp",
+    "actor",
+    "system",
+    "session_id",
+    "trace_id",
+    "decision_boundary",
+    "action",
+    "severity",
+    "outcome",
+    "evidence_hash",
+    "runtime_source"
+  ],
+  "properties": {
+    "event_id": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "actor": { "type": "string" },
+    "system": { "type": "string" },
+    "session_id": { "type": "string" },
+    "trace_id": { "type": "string" },
+    "workspace": { "type": "string" },
+    "decision_boundary": { "type": "string" },
+    "behavioral_drift_score": { "type": "number" },
+    "action": { "type": "string" },
+    "violation_type": { "type": "string" },
+    "severity": { "type": "string" },
+    "escalation_level": { "type": "string" },
+    "intervention_status": { "type": "string" },
+    "stop_authority": { "type": "boolean" },
+    "outcome": { "type": "string" },
+    "evidence_hash": { "type": "string" },
+    "runtime_source": { "type": "string" }
+  }
+}
