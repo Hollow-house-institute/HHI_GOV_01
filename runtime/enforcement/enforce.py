@@ -3,9 +3,20 @@ from precheck import precheck
 from telemetry import emit_governance_event
 from replay import replay_validate
 from escalation import update_escalation
+from stop_authority import activate_stop_authority, stop_authority_status
 
 def enforce_hhi_governance(user_input):
     result = precheck(user_input)
+
+    stop_state = stop_authority_status()
+
+    if stop_state.get("stop_authority"):
+        return {
+            "input": user_input,
+            "outcome": "STOP_AUTHORITY_ACTIVE",
+            "details": stop_state
+        }
+
 
     event = {
         "actor": "system",
@@ -33,6 +44,15 @@ def enforce_hhi_governance(user_input):
         escalation_state = update_escalation(
             result["severity"]
         )
+
+        if result["severity"] == "LEVEL_5":
+            activate_stop_authority(
+                reason=result.get(
+                    "violation_type",
+                    "CRITICAL_GOVERNANCE_FAILURE"
+                ),
+                severity=result["severity"]
+            )
 
     return {
         "input": user_input,
