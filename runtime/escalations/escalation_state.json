@@ -1,12 +1,12 @@
 {
-  "total_violations": 3,
+  "total_violations": 7,
   "severity_counts": {
     "LEVEL_1": 0,
     "LEVEL_2": 0,
     "LEVEL_3": 0,
-    "LEVEL_4": 3,
+    "LEVEL_4": 7,
     "LEVEL_5": 0
   },
   "stop_authority_active": false,
-  "last_updated": "2026-05-17T03:33:43.024893Z"
+  "last_updated": "2026-05-18T12:11:11.767031Z"
 }
