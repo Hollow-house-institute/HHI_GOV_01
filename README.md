@@ -353,3 +353,11 @@ Amy Pierce Bui
 Founder, Hollow House Institute
 
 - [HHI Runtime Enforcement Engine](specifications/runtime/HHI_SPEC_RUNTIME_ENFORCEMENT_ENGINE_01.md)
+
+---
+
+## HHI Governed Authorship
+
+![Provenance](https://img.shields.io/badge/HHI-Governed_Authorship-black)
+
+This artifact follows the HHI governed authorship pattern: human-origin meaning, AI-executed structure, drift-free.
